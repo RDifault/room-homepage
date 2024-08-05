@@ -20,12 +20,12 @@ function App() {
 
   window.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft") {
-      const nodeList = document.querySelectorAll(".next");
+      const nodeList = document.querySelectorAll(".prev");
       for (let i = 0; i < nodeList.length; i++) {
         nodeList[i].click();
       }
     } else if (event.key === "ArrowRight") {
-      const nodeList = document.querySelectorAll(".prev");
+      const nodeList = document.querySelectorAll(".next");
       for (let i = 0; i < nodeList.length; i++) {
         nodeList[i].click();
       }
